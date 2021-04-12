@@ -1,0 +1,284 @@
+body{
+    font-family: "Segoe UI";
+    margin: 0px;
+    display: flex;
+    background-image: url(images/funky-lines.png);
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+     color: #fff;
+}
+
+.myButton {
+	box-shadow: 0px 1px 0px 0px #f0f7fa;
+	background:linear-gradient(to bottom, #0998c6 5%, #0072bc 100%);
+	background-color:#0072bc;
+	border-radius:6px;
+	border:1px solid #0998c6;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	font-weight:bold;
+	padding:1px 12px;
+  margin-right:15px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+	background-color:#019ad2;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+select{
+    width: 150px;
+}
+
+input{
+    width: 142px;
+    margin-right:15px;
+}
+
+
+/* Header styling->*/
+
+.header_logo{
+    margin-right: 25px;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #0072bc;
+    height:40px;
+    font-weight: bold;
+    box-shadow: 0px 0px 14px -5px #000000;
+    z-index: 1;
+}
+
+
+.header_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header_item{
+    padding: 10px 15px;
+    margin-left: 5px;
+}
+
+.header_item:hover{
+    background-color: #0998c6;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+}
+
+/*<-Header styling*/
+
+
+/* Content blocks->*/
+
+.main_block{
+    margin-top: 60px;
+}
+
+.content_block{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0px 0px 14px -8px #000000;
+}
+
+.content_block>a{
+     color: #0072bc;
+}
+
+.content_block2{
+display: flex;
+flex-direction: row;
+align-items:center;
+margin-top: 15px;
+margin-bottom: 30px;
+}
+
+.content_block3{
+display: flex;
+flex-direction:row;
+align-items:baseline;
+}
+
+.content_block4{
+display: flex;
+    align-items: flex-start;
+flex-direction:column;
+margin-right: 15px;
+margin-bottom: 30px
+}
+
+/*<-Content blocks*/
+
+
+.block_element {
+width: 190px;
+background-color: #ffffff;
+margin: 0 10px 10px 0;
+padding: 10px;
+text-align: center;
+display: inline-block;
+vertical-align: top;
+border: 3px solid #0072bc;
+border-radius: 10px;
+box-shadow: 0px 0px 14px -8px #212121;
+}
+
+.block_element>figcaption:before{
+content: '"';
+}
+
+.block_element>figcaption:after{
+content: '"';
+}
+
+.block_element:hover{
+border: 3px solid #0998c6;
+box-shadow: 0px 0px 14px -1px #0072bc;
+transition-duration: 1s;
+}
+
+
+/* Img styling->*/
+
+.img{
+    display: flex;
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_png{
+    min-width: 20%;
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 15px;
+    margin-right: 25px;
+    box-shadow: 0px 0px 14px -8px #212121;
+    transform-origin: top right;
+}
+
+/*<-Img styling*/
+
+
+/* Table styling->*/
+
+table {
+border-spacing: 0;
+margin-top: 15px;
+align-self: center;
+}
+
+th {
+background: #0072bc;
+color: white;
+padding: 10px 20px;
+}
+th, td {
+border-style: solid;
+border-width: 0 1px 1px 0;
+border-color: white;
+}
+th:first-child, td:first-child {
+text-align: left;
+}
+th:last-child {
+border-right: none;
+}
+td {
+padding: 10px 20px;
+background: #e6e7e9;
+}
+
+tr td:last-child {
+border-right: none;
+}
+
+td>a{
+     color: #0072bc;
+}
+/*<-Table styling*/
+
+.content_transform_rotate-origin:hover{
+transform: rotate(360deg);
+transition-duration: 2s;
+}
+
+/* Text animation->*/
+
+.animated_text1{
+    animation-timing-function: ease;
+    animation-name: animation1;
+    animation-duration: 6s;
+}
+
+.animated_text2{
+    animation-timing-function: ease-in;
+    animation-name: animation1;
+    animation-duration: 6s;
+}
+
+.animated_text3{
+    animation-timing-function: ease-in-out;
+    animation-name: animation1;
+    animation-duration: 6s;
+}
+
+.animated_text4{
+    animation-timing-function: ease-out;
+    animation-name: animation1;
+    animation-duration: 6s;
+}
+
+.animated_text5{
+    animation-timing-function: linear;
+    animation-name: animation1;
+    animation-duration: 6s;
+}
+
+@keyframes animation1{
+    0%{
+
+    }
+    50%{
+    transform: translateX(400px);
+    }
+    100%{
+    transform: translateX(0px);
+    }
+}
+
+/*<-Text animation */
+
+
+.basement{
+    column-count:4;
+    word-spacing: 4px;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #7f8c8d;
+}
